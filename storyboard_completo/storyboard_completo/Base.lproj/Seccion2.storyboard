@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="40B-7o-fJ3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Seccion Dos View Controller-->
+        <scene sceneID="XYj-8c-Pp8">
+            <objects>
+                <viewController id="40B-7o-fJ3" customClass="SeccionDosViewController" customModule="storyboard_completo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZDN-R7-DFb"/>
+                        <viewControllerLayoutGuide type="bottom" id="6ka-8L-TKx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0vt-4J-tmc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sección 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aB4-ww-Kz2">
+                                <rect key="frame" x="20" y="131" width="560" height="62"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ll3-Di-s07">
+                                <rect key="frame" x="20" y="259" width="250" height="50"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9G4-zS-ShL"/>
+                                    <constraint firstAttribute="width" constant="250" id="Ibr-j9-DBz"/>
+                                </constraints>
+                                <state key="normal" title="Sección A"/>
+                                <connections>
+                                    <segue destination="p4n-dd-n4S" kind="show" id="Xmc-ev-8zL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AIT-S4-If7">
+                                <rect key="frame" x="330" y="259" width="250" height="50"/>
+                                <animations/>
+                                <state key="normal" title="Sección B"/>
+                                <connections>
+                                    <segue destination="tCC-aB-7nt" kind="show" id="sYK-xf-6PW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ll3-Di-s07" firstAttribute="top" secondItem="AIT-S4-If7" secondAttribute="top" id="2aV-2W-w4o"/>
+                            <constraint firstItem="aB4-ww-Kz2" firstAttribute="leading" secondItem="0vt-4J-tmc" secondAttribute="leadingMargin" id="6tz-W5-rUb"/>
+                            <constraint firstItem="AIT-S4-If7" firstAttribute="leading" secondItem="ll3-Di-s07" secondAttribute="trailing" constant="60" id="89X-C4-Eru"/>
+                            <constraint firstItem="AIT-S4-If7" firstAttribute="baseline" secondItem="ll3-Di-s07" secondAttribute="firstBaseline" id="NgF-wv-4uB"/>
+                            <constraint firstItem="aB4-ww-Kz2" firstAttribute="leading" secondItem="ll3-Di-s07" secondAttribute="leading" id="ZW4-1E-gb4"/>
+                            <constraint firstItem="ll3-Di-s07" firstAttribute="baseline" secondItem="AIT-S4-If7" secondAttribute="firstBaseline" id="aO8-Ag-4eD"/>
+                            <constraint firstItem="AIT-S4-If7" firstAttribute="trailing" secondItem="0vt-4J-tmc" secondAttribute="trailingMargin" id="e69-SW-FGZ"/>
+                            <constraint firstItem="ll3-Di-s07" firstAttribute="top" secondItem="aB4-ww-Kz2" secondAttribute="bottom" constant="66" id="qsW-Zp-3QG"/>
+                            <constraint firstItem="aB4-ww-Kz2" firstAttribute="trailing" secondItem="AIT-S4-If7" secondAttribute="trailing" id="tq2-71-QlU"/>
+                            <constraint firstItem="aB4-ww-Kz2" firstAttribute="top" secondItem="ZDN-R7-DFb" secondAttribute="bottom" constant="67" id="z2e-8W-UMT"/>
+                            <constraint firstItem="6ka-8L-TKx" firstAttribute="top" secondItem="ll3-Di-s07" secondAttribute="bottom" constant="291" id="zhQ-lP-bIi"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oio-yl-3Ba" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="761" y="1122"/>
+        </scene>
+        <!--SeccionA View Controller-->
+        <scene sceneID="Qj3-sf-uzu">
+            <objects>
+                <viewController id="p4n-dd-n4S" customClass="SeccionAViewController" customModule="storyboard_completo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IyS-Fe-qgB"/>
+                        <viewControllerLayoutGuide type="bottom" id="CEZ-Oq-CJp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yaA-eR-Hb1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sección A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGB-V5-j94">
+                                <rect key="frame" x="20" y="132" width="560" height="50"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.35999116279999999" green="0.50237248359999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="vGB-V5-j94" firstAttribute="trailing" secondItem="yaA-eR-Hb1" secondAttribute="trailingMargin" id="0UR-lP-The"/>
+                            <constraint firstItem="vGB-V5-j94" firstAttribute="top" secondItem="IyS-Fe-qgB" secondAttribute="bottom" constant="68" id="6Fg-E8-G0Y"/>
+                            <constraint firstItem="CEZ-Oq-CJp" firstAttribute="top" secondItem="vGB-V5-j94" secondAttribute="bottom" constant="418" id="MUH-B0-TTG"/>
+                            <constraint firstItem="vGB-V5-j94" firstAttribute="leading" secondItem="yaA-eR-Hb1" secondAttribute="leadingMargin" id="ZZ5-Jt-79f"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xlK-Bl-Q2S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="761" y="1903"/>
+        </scene>
+        <!--SeccionB View Controller-->
+        <scene sceneID="964-Ye-ATp">
+            <objects>
+                <viewController id="tCC-aB-7nt" customClass="SeccionBViewController" customModule="storyboard_completo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="70U-7f-Lyj"/>
+                        <viewControllerLayoutGuide type="bottom" id="LrF-tC-WR5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h9I-Vd-Bxm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sección B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8r-af-8xU">
+                                <rect key="frame" x="20" y="124" width="560" height="50"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O96-7Y-Kf9">
+                                <rect key="frame" x="193" y="239" width="215" height="70"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="O1x-9A-G7e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Cambia Color">
+                                    <color key="titleColor" red="1" green="0.98039215690000003" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cambiarColor:" destination="tCC-aB-7nt" eventType="touchUpInside" id="X0U-xO-ugq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.13725490200000001" green="0.50588235290000005" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="O96-7Y-Kf9" firstAttribute="centerX" secondItem="a8r-af-8xU" secondAttribute="centerX" id="IcL-no-xp5"/>
+                            <constraint firstItem="LrF-tC-WR5" firstAttribute="top" secondItem="a8r-af-8xU" secondAttribute="bottom" constant="426" id="OtS-0q-RfG"/>
+                            <constraint firstItem="O96-7Y-Kf9" firstAttribute="top" secondItem="a8r-af-8xU" secondAttribute="bottom" constant="65" id="XGI-eb-4yP"/>
+                            <constraint firstItem="LrF-tC-WR5" firstAttribute="top" secondItem="O96-7Y-Kf9" secondAttribute="bottom" constant="291" id="jCR-9o-SPU"/>
+                            <constraint firstItem="a8r-af-8xU" firstAttribute="trailing" secondItem="h9I-Vd-Bxm" secondAttribute="trailingMargin" id="ktG-D6-IhD"/>
+                            <constraint firstItem="a8r-af-8xU" firstAttribute="top" secondItem="70U-7f-Lyj" secondAttribute="bottom" constant="60" id="qId-eW-Srs"/>
+                            <constraint firstItem="a8r-af-8xU" firstAttribute="leading" secondItem="h9I-Vd-Bxm" secondAttribute="leadingMargin" id="vvI-x0-tgF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cambiarColorButton" destination="O96-7Y-Kf9" id="c6k-dm-ssK"/>
+                        <outlet property="tituloLabel" destination="a8r-af-8xU" id="LhJ-6J-GMc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fx3-GO-92z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1449" y="1903"/>
+        </scene>
+    </scenes>
+</document>
